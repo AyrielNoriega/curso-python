@@ -28,3 +28,5 @@ print(text.capitalize())
 print(text.title())
 
 print("23".isdigit())
+
+print('Py' 'thon')
