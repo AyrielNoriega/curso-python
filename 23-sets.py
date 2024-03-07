@@ -28,3 +28,22 @@ print(set_numbers) # {1, 2, 3, 4}
 # si quiero convertir este set único a una lista, lo puedo hacer:
 unique_numbers = list(set_numbers)
 print(unique_numbers)
+
+
+# agregar un elemento al conjunto
+set_countries = {'col', 'mex', 'bol'}
+set_countries.add('pe')
+print(set_countries)
+# actualizar un conjunto
+set_countries.update({'pe', 'arg', 'ecu'})
+print(set_countries)
+
+# eliminar elemento de un conjunto
+set_countries.remove('col')
+print(set_countries)
+
+set_countries.discard('eu')
+print(set_countries)
+
+set_countries.clear()
+print(set_countries)
