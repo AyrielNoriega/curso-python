@@ -39,3 +39,16 @@ print(listNames)
 newDict = { name: age for (name, age) in listNames }
 print(newDict)
 print(list(newDict))
+
+
+# Dictionary Comprehension: con condicionales
+import random
+
+countries = ['col', 'pe', 'cad', 'pe']
+populationV3 = { country: random.randint(1, 50) for country in countries }
+
+print('populationV3: ', populationV3)
+
+# agregando condicion
+result = { country: population for (country, population) in populationV3.items() if population > 20}
+print('result: ', result)
